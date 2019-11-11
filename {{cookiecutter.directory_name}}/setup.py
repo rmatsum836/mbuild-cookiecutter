@@ -13,7 +13,7 @@ setup(
     author='{{cookiecutter.author_name}}',
     author_email='{{cookiecutter.author_email}}',
     license='{{cookiecutter.open_source_license}}',
-    version=0.0.0,
+    version='0.0.0',
     description=short_description[0],
     zip_safe=False,
     entry_points={
