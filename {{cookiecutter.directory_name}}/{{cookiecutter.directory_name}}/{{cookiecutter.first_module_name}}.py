@@ -4,7 +4,7 @@ Primary function of recipe here
 
 import mbuild as mb
 
-class example(mb.Compound):
+class "{{cookiecutter.first_plugin_name}}"(mb.Compound):
     """
     Example class that would go in your recipe.
 
@@ -14,5 +14,6 @@ class example(mb.Compound):
         This is an example argument
 
     """
-    def __init__(self, your_argument)
-        super(example, self).__init__()
+    def __init__(self):
+        super("{{cookiecutter.first_plugin_name}}", self).__init__()
+        pass
