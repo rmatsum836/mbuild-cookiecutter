@@ -1,3 +1,6 @@
+[//]: # (Badges)
+[![Travis Build Status](https://travis-ci.com/rmatsum836/mbuild-cookiecutter.svg?branch=master)
+
 # Cookiecutter for mBuild recipes
 
 A [cookiecutter](https://github.com/audreyr/cookiecutter) template for developing a Python
