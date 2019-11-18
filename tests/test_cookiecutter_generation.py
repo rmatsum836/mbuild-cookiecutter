@@ -29,18 +29,6 @@ def build_files_list(root_dir):
     ]
 
 
-def check_paths(paths):
-    """Method to check all paths have correct substitutions,
-    used by other tests cases
-    """
-    # Assert that no match is found in any of the files
-    for path in paths:
-        for line in open(path, "r"):
-            match = RE_OBJ.search(line)
-            msg = "cookiecutter variable not replaced in {}"
-            assert match is None, msg.format(path)
-
-
 def test_project_generation(cookies, context):
     """
     Test that project is generated and fully rendered.
@@ -54,4 +42,3 @@ def test_project_generation(cookies, context):
 
     paths = build_files_list(str(result.project))
     assert paths
-    check_paths(paths)
