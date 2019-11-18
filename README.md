@@ -1,5 +1,5 @@
 [//]: # (Badges)
-[![Travis Build Status](https://travis-ci.com/rmatsum836/mbuild-cookiecutter.svg?branch=master)
+[![Build Status](https://travis-ci.com/rmatsum836/mbuild-cookiecutter.svg?branch=master)](https://travis-ci.com/rmatsum836/mbuild-cookiecutter)
 
 # Cookiecutter for mBuild recipes
 
