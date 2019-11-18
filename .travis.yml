@@ -23,4 +23,4 @@ install:
   - pip install -e .
 
 script:
-  - python tests/*
+  - pytest tests/*
