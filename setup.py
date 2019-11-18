@@ -1,6 +1,6 @@
-import setuptools
+from setuptools import setup
 
-setuptools.setup(
+setup(
         name="mbuild-cookiecutter",
         version="0.0.0",
         description="A Cookiecutter template for creating mBuild recipes",
