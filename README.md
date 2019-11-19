@@ -22,7 +22,7 @@ With `cookicutter` installed, execute the following command inside the
 folder you want to create your skeletal mBuild recipe directory.
 
 ```
-cookiecutter mbuild-cookiecutter
+cookiecutter /path/to/mbuild-cookiecutter/
 ```
 
 From here, the user will be prompted for information on how to build
@@ -33,7 +33,7 @@ the directory such as package name, module name, and authors.
 Unit testing with [pytest](https://pytest.org) has been integrated
 within this cookiecutter.  This testing framework is used 
 in [mBuild](https://github.com/mosdef-hub/mbuild).  The default tests
-added in `project/tests/` are to check that the cookiecutter package
+added in `{{cookiecutter.directory_name}}/tests/` are to check that the cookiecutter package
 has been successfully integrated with mBuild recipes via entrypoints.  
 
 Additional tests can be added to the `project/tests/` folder.  Any
