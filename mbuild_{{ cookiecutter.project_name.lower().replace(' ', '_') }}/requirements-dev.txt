@@ -5,3 +5,5 @@ mdtraj
 parmed
 setuptools
 pytest-cookies==0.4.0
+pytest-cov
+codecov
