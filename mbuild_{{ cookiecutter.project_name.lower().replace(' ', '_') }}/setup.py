@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     # Self-descriptive entries which should always be present
-    name='mbuild_{{ cookiecutter.project_name.lower().replace(' ', '_') }}',
+    name='{{cookiecutter.directory_name}}',
     author='{{cookiecutter.author_name}}',
     author_email='{{cookiecutter.author_email}}',
     license='{{cookiecutter.open_source_license}}',

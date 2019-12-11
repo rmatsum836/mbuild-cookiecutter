@@ -14,7 +14,7 @@ def context():
     "first_module_name": "first_module",
     "first_plugin_name": "first_class",
     "author_name": "Big Chungus",
-    "author_email": "boomer@hotmail.com)",
+    "author_email": "boomer@hotmail.com",
     "description": "A short description of the project.",
     "open_source_license": "MIT"
     }
@@ -37,7 +37,7 @@ def test_project_generation(cookies, context):
 
     assert result.exit_code == 0
     assert result.exception is None
-    assert result.project.basename == context['project_name']
+    assert result.project.basename == 'mbuild_' + context['project_name']
     assert result.project.isdir()
 
     paths = build_files_list(str(result.project))
