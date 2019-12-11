@@ -1,0 +1,6 @@
+numpy
+pytest
+mbuild
+mdtraj
+parmed
+setuptools
