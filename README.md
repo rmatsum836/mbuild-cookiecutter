@@ -9,6 +9,7 @@ Based on the [MolSSI](https://github.com/MolSSI/cookiecutter-cms)
 Cookiecutter.
 
 ## Features
+
 * Pre-configured `setup.py` for installation and packaging which automatically registers with the ``entry_point`` group defined in mBuild
 * Pre-configured Linux and OSX continuous integration on Travis-CI
 * Basic testing with [PyTest](https://docs.pytest.org/en/latest/)
