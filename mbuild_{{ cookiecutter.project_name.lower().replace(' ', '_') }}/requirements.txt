@@ -1,5 +1,4 @@
 numpy
-cookiecutter
 pytest
 mbuild
 mdtraj
