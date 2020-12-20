@@ -28,7 +28,7 @@ jobs:
         Python37macOS:
           imageName: 'macOS-latest'
           python.version: 3.7
-        Python37macOS:
+        Python38macOS:
           imageName: 'macOS-latest'
           python.version: 3.8
 
