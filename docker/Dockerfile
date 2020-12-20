@@ -6,7 +6,7 @@ USER root
 
 RUN apk --update-cache upgrade && \
     apk add --no-cache bash vim nano && \
-    apk add --no-cache --virtual .build_deps cmake make git git-lfs && \
+    apk add --no-cache --virtual .build_deps cmake make git && \
 	mkdir /software && cd /software && \
 	conda update conda -y && \
 	. /opt/conda/etc/profile.d/conda.sh && \
@@ -19,16 +19,16 @@ RUN apk --update-cache upgrade && \
 	cd /software && \
     git clone https://github.com/rmatsum836/mbuild-cookiecutter && \
     cd mbuild-cookiecutter && \
-    python setup.py install && cd ../ && \
+    pip install . && cd ../ && \
 	conda clean -afy && apk del .build_deps && \
     rm -rf /var/cache/apk/*
 
-WORKDIR /workspace
+WORKDIR /software
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh && \
-    chown -R anaconda /workspace && \
-    chmod 755 /workspace
+    chown -R anaconda /software && \
+    chmod 755 /software
 
 USER anaconda
 
