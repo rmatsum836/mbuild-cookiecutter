@@ -62,7 +62,7 @@ jobs:
       - bash: |
           source activate test-environment
           pip install pytest-azurepipelines
-          python -m pytest -v
+          python -m pytest tests/ -v
         displayName: Run Tests
         
       - bash: |
