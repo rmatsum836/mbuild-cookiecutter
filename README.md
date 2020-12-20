@@ -22,7 +22,7 @@ Cookiecutter.
 
 ## Usage
 
-With `cookicutter` installed, execute the following command inside the
+With `cookiecutter` installed, execute the following command inside the
 folder you want to create your skeletal mBuild recipe directory.
 
 ```
@@ -49,14 +49,14 @@ To run the suite of unit tests, type `pytest -v` on the command line.
 ## Continuous Integration
 
 Continuous integration is done with
-[Travis-CI](https://travis-ci.org) for both Linux and MacOS testing.
-Travis-CI is free for open source projects and allows you to test and
+[Azure](https://azure.microsoft.com/en-us/services/devops/) for both Linux and MacOS testing.
+Azure DevOps is free for open source projects and allows you to test and
 verify that your mBuild recipe works with various OS and Python
 versions.
 
 Currently, continuous integration is setup to test Linux and MacOS
-builds for Python versions 3.6 and 3.7.  The build instructions are
-contained in `.travis.yml` and is designed to work out of the box.
+builds for Python versions 3.7 and 3.8.  The build instructions are
+contained in `azure-pipelines.yml` and is designed to work out of the box.
 However, you may have to edit the instructions to include any new
 dependencies.
 
@@ -71,3 +71,11 @@ python
 import mbuild
 mbuild.recipes.name_of_your_plugin()
 ```
+
+## Docker Image
+mBuild recipes using the cookiecutter template can be built using the provided docker image.  To
+run the docker image, simply execute the following command `docker run -it
+rmatsum/mbuild-cookiecutter:latest` which will pull the most recent docker image from Docker Hub.
+Running this image will drop you into the `software` directory which contains the installed
+`mbuild-cookiecutter` package.  From there, the instructions in the `Usage` section can be
+followed to build the mBuild recipe.
