@@ -1,5 +1,5 @@
 [//]: # (Badges)
-[![Build Status](https://travis-ci.com/rmatsum836/mbuild-cookiecutter.svg?branch=master)](https://travis-ci.com/rmatsum836/mbuild-cookiecutter)
+[![Build Status](https://dev.azure.com/rayamatsumoto/mbuild-cookiecutter/_apis/build/status/rmatsum836.mbuild-cookiecutter?branchName=refs%2Fpull%2F6%2Fmerge)](https://dev.azure.com/rayamatsumoto/mbuild-cookiecutter/_build/latest?definitionId=4&branchName=refs%2Fpull%2F6%2Fmerge)
 
 # Cookiecutter for mBuild recipes
 
