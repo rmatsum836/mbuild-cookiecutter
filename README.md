@@ -8,6 +8,10 @@ package for [mBuild](https://github.com/mosdef-hub/mbuild) recipes.
 Based on the [MolSSI](https://github.com/MolSSI/cookiecutter-cms)
 Cookiecutter.
 
+## Disclaimer
+Continuous integration pipelines on Azure are currently not working.  The Azure organization for this project may have been inadvertently flagged due
+to attempts to cut down on abuse, such as crypto mining, in recent months.  See: https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/. A ticket has been submitted to resolve this issue.
+
 ## Features
 
 * Pre-configured `setup.py` for installation and packaging which automatically registers with the ``entry_point`` group defined in mBuild
